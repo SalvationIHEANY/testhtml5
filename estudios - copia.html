@@ -1,0 +1,169 @@
+<!DOCTYPE html><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph -->
+  <meta property="og:title" content="IES El Caminás - Estudios">
+  <meta property="og:description" content="Oferta educativa del instituto">
+  <meta property="og:image" content="img/preview.jpg">
+
+  <title>Oferta Educativa | IES Tu Instituto</title>
+  <link rel="icon" href="images.jpg">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+  <h1>IES Tu Instituto</h1>
+  <nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="estudios.html">Estudios</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section>
+    <h2>Horario CSFL 1</h2>
+    <table border = "1">
+      <thead>
+        <tr>
+          <th >Hora</th>
+          <th >Lunes</th>
+          <th >Martes</th>
+          <th >Miércoles</th>
+          <th >Jueves</th>
+          <th >Viernes</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>14:05 - 15:00</td>
+          <td></td>
+          <td>Tutoría</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <colgroup>
+            <col span="1" style="background-color:greenyellow">
+          </colgroup>
+          <td>15:00 - 15:55</td>
+          <td rowspan="2">Sistemas informático</td>
+          <td rowspan="3">Bases de Datos</td>
+          <td>Inglés</td>
+          <td>Proyecto intermodula</td>
+          <td rowspan="2">Bases de Datos</td>
+        </tr>
+        <tr>
+          <td>15:55 - 16:50</td>
+          <td>Aplicaciones</td>
+          <td>Sistemas informático</td>
+        </tr>
+        <tr>
+          <td>16:50 - 17:45</td>
+          <td>Lenguajes de marcas</td>
+          <td>Sistemas informático</td>
+          <td>Lenguajes de marcas</td>
+          <td>Programación</td>
+        <tr>
+          <td>17:45 - 18:10</td>
+          <td colspan="5">RECREO</td>
+        </tr>
+        
+        <tr>
+          <td>18:10 - 19:05</td>
+          <td>Lenguajes de marcas</td>
+          <td rowspan="3">Programación</td>
+          <td>Sistemas informático</td>
+          <td rowspan="2">Entornos de desarrol</td>
+          <td rowspan="2">Programación</td>
+        </tr>
+        <tr>
+          <td>19:05 - 20:00</td>
+          <td>Itinerario personal</td>
+          <td rowspan="2">Programación</td>
+        </tr>
+        <tr>
+          <td>20:00 - 20:55</td>
+          <td>Entornos de desarrol</td>
+          <td>Itinerario personal</td>
+          <td>Inglés</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+      </tfoot>
+    </table>
+  </section>
+
+  <section>
+    <h2>Departamentos</h2>
+
+    <details>
+      <summary>Departamento de Informática</summary>
+      <p>Profesorado: Ana López, Victor Pérez, Marta Ruiz.</p>
+    </details>
+
+    <details>
+      <summary>Departamento de lengua</summary>
+      <p>Profesorado: María García y Pedro Torres.</p>
+    </details>
+
+    <details>
+      <summary>Departamento de administración</summary>
+      <p>Profesorado: María Peris y Alicia Font.</p>
+    </details>
+
+  </section>
+
+  <section>
+    <h2>Nuestro logo</h2>
+    <canvas id="logoCanvas" width="220" height="220">
+      Tu navegador no soporta canvas.
+    </canvas>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 IES El caminás</p>
+</footer>
+
+<script>
+  const canvas = document.getElementById("logoCanvas");
+  const ctx = canvas.getContext('2d');
+ // 3. ¡A dibujar!
+ // Dibuja un rectángulo azul 
+  ctx.fillStyle = "#2b9ec7";
+  ctx.fillRect(0,0,300,300);
+
+  /* forma blanca */
+  ctx.beginPath();
+  ctx.moveTo(0,120);
+  ctx.quadraticCurveTo(80,60,150,110);
+  ctx.quadraticCurveTo(220,160,300,110);
+  ctx.lineTo(300,200);
+  ctx.lineTo(0,200);
+  ctx.closePath();
+  ctx.fillStyle = "white";
+  ctx.fill();
+
+  /* forma verde */
+  ctx.beginPath();
+  ctx.moveTo(0,180);
+  ctx.quadraticCurveTo(80,140,150,170);
+  ctx.quadraticCurveTo(180,200,250,190);
+  ctx.lineTo(250,250);
+  ctx.lineTo(0,250);
+  ctx.closePath();
+  ctx.fillStyle = "#6ec12e";
+  ctx.fill();
+</script>
+
+</body>
+</html>

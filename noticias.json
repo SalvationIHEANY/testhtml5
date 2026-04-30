@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "titulo": "Primera matrícula de honor",
+        "fecha": "2026-04-20",
+        "contenido": "María López ha obtenido matrícula de honor...",
+        "categoria": "Académico",
+        "importante": true
+    },
+    {
+        "id": 2,
+        "titulo": "Nueva app del centro",
+        "fecha": "2026-04-18",
+        "contenido": "Los alumnos de DAM han creado una app...",
+        "categoria": "Tecnología",
+        "importante": false
+    },
+    {
+        "id": 3,
+        "titulo": "Nueva Jornada de Puertas Abiertas",
+        "fecha": "2026-04-15",
+        "contenido": "Ven a conocer nuestras instalaciones el próximo miércoles...",
+        "categoria": "Eventos",
+        "importante": true
+    },
+    {
+        "id": 4,
+        "titulo": "Ganadores del Certamen Literario",
+        "fecha": "2026-04-10",
+        "contenido": "Felicitamos a los alumnos de 2º de Bachillerato por sus premios...",
+        "categoria": "Cultura",
+        "importante": false
+    }
+]

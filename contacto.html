@@ -1,0 +1,75 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="IES El Caminás - Contacto">
+  <meta property="og:description" content="Formulario de contacto del instituto">
+  <meta property="og:image" content="images.jpg">
+
+  <title>Contacto | IES El Caminás</title>
+  <link rel="icon" href="images.jpg">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+  <h1>IES El Caminás</h1>
+  <nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="estudios.html">Estudios</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+</header>
+<main>
+
+  <section>
+    <h2>Formulario</h2>
+
+    <form action="https://caminas.com" method="post">
+
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha">
+      </fieldset>
+
+      <fieldset>
+        <legend>Información académica</legend>
+
+        <label for="curso">Curso cursado actualmente:</label>
+        <select id="curso" name="curso">
+          <option value="1smr">1º CSFL</option>
+          <option value="2smr">2º CSFY</option>
+          <option value="1batx">1º batx</option>
+          <option value="1batx">2º batx</option>
+        </select>
+      </fieldset>
+
+      <label class="checkbox">
+        <input type="checkbox" required>
+        Acepto la política de privacidad (galletas)
+      </label>
+
+      <button type="submit">Enviar solicitud</button>
+
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 IES El caminás</p>
+</footer>
+
+</body>
+</html>
